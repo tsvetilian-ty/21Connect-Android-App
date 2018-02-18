@@ -96,12 +96,23 @@ public class MainPresenter implements MainContract.Presenter {
 
     @Override
     public void deleteDevice() {
-        //TODO
+        Realm db = Realm.getDefaultInstance();
+
+        db.beginTransaction();
+        Device tmpDevice = db.where(Device.class).findFirst();
+        tmpDevice.deleteFromRealm();
+        db.commitTransaction();
     }
 
     @Override
     public void setDeviceSyncStatus(boolean status) {
-        //TODO
+        Realm db = Realm.getDefaultInstance();
+
+        db.beginTransaction();
+        Device tmpDevice = db.where(Device.class).findFirst();
+        tmpDevice.setSyncEnabled(status);
+        db.insertOrUpdate(tmpDevice);
+        db.commitTransaction();
     }
 
     private void addToDb(final Device device) {
