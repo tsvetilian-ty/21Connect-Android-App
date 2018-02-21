@@ -36,6 +36,15 @@
             </intent-filter>
         </receiver>
 
+        <receiver
+            android:name=".Broadcasts.ChargingBatteryReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            </intent-filter>
+        </receiver>
+
         <service
             android:name=".Broadcasts.NotificationUtilityService"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
@@ -52,6 +61,12 @@
 
         <service
             android:name=".Services.CallReceivedService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+        </service>
+
+        <service
+            android:name=".Services.ChargingBatteryService"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE">
         </service>
