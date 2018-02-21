@@ -11,6 +11,7 @@ import com.ty.tsvetilian.a21connect.Contracts.MainContract;
 import com.ty.tsvetilian.a21connect.Models.Device;
 import com.ty.tsvetilian.a21connect.Presenters.MainPresenter;
 import com.ty.tsvetilian.a21connect.R;
+import com.ty.tsvetilian.a21connect.Utility.PermissionsUtility;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View{
 
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         setContentView(R.layout.activity_main);
         mainPresenter = new MainPresenter();
         mainPresenter.attach(this);
-        mainPresenter.addDevice("test", "token_test");
+        PermissionsUtility.checkPermissions(this, 1000);
+        PermissionsUtility.checkNotificationListener(this);
         Button scanBtn = findViewById(R.id.button);
         scanBtn.setOnClickListener(new View.OnClickListener() {
             @Override
