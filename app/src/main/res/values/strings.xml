@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">21Connect</string>
+    <string name="main_greating_msg">Hello to 21Connect</string>
+
+    <string name="no_device_is_connected_yet">You\'re not connected!</string>
+    <string name="connect_to_device">Connect to device</string>
+    <string name="computer_name_and_ram">Computer Name (RAM IN GB)</string>
+    <string name="cpu">CPU: Intel Something</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="sync_disabled">Sync Disabled</string>
+    <string name="title_code_scanning">Code Scanning</string>
+    <string name="message_code_scanning">Scan the code from your PC to connect to it!</string>
+    <string name="sync_enabled">Sync Enabled</string>
+    <string name="device_cpu">CPU: %s</string>
+    <string name="device_name_and_ram">%s (%dGB)</string>
+    <string name="sync_disabled_message">You won\'t see notifications on your PC!</string>
+    <string name="sync_enabled_message">You will see notifications, again on your PC!</string>
+    <string name="title_disconnect_dialog">Do you want to disconnect?</string>
+    <string name="message_disconnect_dialog">After disconnect you can connect to this or another PC!</string>
+    <string name="cancel">Cancel</string>
 </resources>

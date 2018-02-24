@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sync"
+        android:enabled="true"
+        android:icon="@drawable/ic_disable_sync_24dp"
+        android:title="@string/sync_disabled"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/disconnect"
+        android:enabled="true"
+        android:icon="@drawable/ic_disconnect_24dp"
+        android:title="@string/disconnect"
+        app:showAsAction="ifRoom" />
+
+</menu>
