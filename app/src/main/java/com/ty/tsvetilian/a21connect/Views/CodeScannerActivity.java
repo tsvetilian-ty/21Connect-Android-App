@@ -35,7 +35,8 @@ public class CodeScannerActivity extends AppCompatActivity implements CodeScanne
         mPresenter.attach(this);
         initQrScanner();
         mInformationDialog = new AlertDialog.Builder(this)
-                .setTitle("Scan the code")
+                .setTitle(R.string.title_code_scanning)
+                .setMessage(R.string.message_code_scanning)
                 .setPositiveButton("OK", null)
                 .show();
     }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">21Connect</string>
+    <string name="main_greating_msg">Добре дошли</string>
+    <string name="no_device_is_connected_yet">Вие не сте свързан!</string>
+    <string name="connect_to_device">Свързване към устройство</string>
+    <string name="disconnect">Разкачване</string>
+    <string name="sync_disabled">Синхронизация забранена</string>
+    <string name="title_code_scanning">Сканиране на код</string>
+    <string name="sync_enabled">Синхронизоция позволена</string>
+    <string name="device_cpu">Процесор: %s</string>
+    <string name="cancel">Затвори</string>
+    <string name="sync_disabled_message">Няма да виждате известия на вашия компютър!</string>
+    <string name="sync_enabled_message">Ще виждате известия, отново!</string>
+    <string name="title_disconnect_dialog">Желаете ли да се разкачите?</string>
+    <string name="message_disconnect_dialog">След разкачване ще може да се свържете с този или друг компютър!</string>
+    <string name="message_code_scanning">Сканирайте кода от вашето PC за да се свържете с него!</string>
+</resources>
