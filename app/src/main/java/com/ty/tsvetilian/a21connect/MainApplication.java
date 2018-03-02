@@ -12,8 +12,8 @@ public class MainApplication extends Application {
         super.onCreate();
 
         Realm.init(this);
-//        RealmConfiguration config = new RealmConfiguration.Builder().name("connect21.realm").build();
-        RealmConfiguration config = new RealmConfiguration.Builder().inMemory().name("connect21.realm").build();
+        RealmConfiguration config = new RealmConfiguration.Builder().name("connect21.realm").build();
+//        RealmConfiguration config = new RealmConfiguration.Builder().inMemory().name("connect21.realm").build();
         Realm.setDefaultConfiguration(config);
     }
 }

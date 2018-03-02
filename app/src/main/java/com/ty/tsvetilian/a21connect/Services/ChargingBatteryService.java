@@ -59,4 +59,4 @@ public class ChargingBatteryService extends JobIntentService {
         });
         socket.connect();
 
-    }}
+}}
