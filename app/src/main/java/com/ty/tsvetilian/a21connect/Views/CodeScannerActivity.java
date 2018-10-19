@@ -1,8 +1,11 @@
 package com.ty.tsvetilian.a21connect.Views;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -50,17 +53,20 @@ public class CodeScannerActivity extends AppCompatActivity implements CodeScanne
 
         final CameraSource cameraSource = new CameraSource
                 .Builder(this, barcodeDetector)
-                .setRequestedFps(15.0f)
-                .setRequestedPreviewSize(720, 576)
+                .setRequestedFps(24)
+                .setAutoFocusEnabled(true)
+                .setRequestedPreviewSize(1920, 1024)
                 .build();
 
         qrCodeView.getHolder().addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
                 try {
-                    cameraSource.start(qrCodeView.getHolder());
-                } catch (IOException ie) {
-                    Log.e("CAMERA ERROR CAN'T SCAN", ie.getMessage());
+                    if (ActivityCompat.checkSelfPermission(CodeScannerActivity.this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                        cameraSource.start(qrCodeView.getHolder());
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
             }
 

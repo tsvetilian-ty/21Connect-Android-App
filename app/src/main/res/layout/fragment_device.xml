@@ -73,8 +73,8 @@
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:elevation="@dimen/cardview_default_elevation"
-        app:itemIconTint="@color/common_signin_btn_dark_text_focused"
-        app:itemTextColor="@color/common_signin_btn_dark_text_focused"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/device_controls"
         tools:targetApi="lollipop" />
