@@ -22,4 +22,4 @@ Install the [Windows](https://github.com/tsvetilian-ty/21Connect/releases) deskt
 
 ## Screenshots
 
-![Disconnected](screenshots/disconnected.webp)
+![Disconnected](screenshots/disconnected.jpeg)
